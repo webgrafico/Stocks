@@ -1,4 +1,10 @@
-# Pré-requisitos
+# Foxbit Frontend Challenge
+
+Você precisará criar a tela de listagem de moedas, conforme layout abaixo, consumindo informações do WebSocket para exibir na tela.
+
+![image](https://user-images.githubusercontent.com/13206817/159704439-0215b705-3155-46de-8159-bd0439d74586.png)
+
+### Pré-requisitos
 
 #### O que é permitido:
 - Usar as dependências já adicionadas ao projeto
@@ -19,12 +25,6 @@ O objetivo desse teste é avaliar:
 - uso e abuso das features das linguagens (React, NextJS, syled-components);
 - performance do código;
 - testes automatizados.
-
-# Teste
-
-Você precisará criar a tela de listagem de moedas, conforme layout abaixo, consumindo informações do WebSocket para exibir na tela.
-
-![image](https://user-images.githubusercontent.com/13206817/159704439-0215b705-3155-46de-8159-bd0439d74586.png)
 
 ## Anatomia do componente
 
@@ -66,7 +66,7 @@ A comunicação será feita toda por WebSocket para a exibição dos dados na te
 
 `wss://api.foxbit.com.br/`
 
-### ```GetInstrumentId``` - Pegar listagem de Moedas
+### ```GetInstrumentIds``` - Pegar listagem de Moedas
 
 A chamada de WebSocket retorna varios campos e informações, porém devem ser considerados os campos descritos abaixo.
 
