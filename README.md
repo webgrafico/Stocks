@@ -1,5 +1,8 @@
 # Foxbit Frontend Challenge
 
+### ℹ️ ATENÇÃO
+Clonar ou baixar o código deste repositório e subir a resolução do teste em uma conta github ou enviar o zip com arquivos
+
 Você precisará criar a tela de listagem de moedas, conforme layout abaixo, consumindo informações do WebSocket para exibir na tela.
 
 ![image](https://user-images.githubusercontent.com/13206817/159704439-0215b705-3155-46de-8159-bd0439d74586.png)
