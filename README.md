@@ -69,7 +69,7 @@ A comunicação será feita toda por WebSocket para a exibição dos dados na te
 
 `wss://api.foxbit.com.br/`
 
-### ```GetInstrumentIds``` - Pegar listagem de Moedas
+### ```GetInstruments``` - Pegar listagem de Moedas
 
 A chamada de WebSocket retorna varios campos e informações, porém devem ser considerados os campos descritos abaixo.
 
@@ -114,7 +114,7 @@ Campos a serem utilizados:
 
 ```Rolling24HrVolume```: Volume negociado nas últimas 24 horas
 
-```Rolling24HrPxChange```: Variaçnao de preço nas últimas 24 horas
+```Rolling24HrPxChange```: Variação de preço nas últimas 24 horas
 
 Exemplo de retorno
 ```Javascript
@@ -125,6 +125,7 @@ Exemplo de retorno
   "o": "{\"OMSId\":1,\"InstrumentId\":1,\"BestBid\":10.1,\"BestOffer\":20,\"LastTradedPx\":20,\"LastTradedQty\":0.1,\"LastTradeTime\":1614613162,\"SessionOpen\":130,\"SessionHigh\":130,\"SessionLow\":10.1,\"SessionClose\":10.1,\"Volume\":0.1,\"CurrentDayVolume\":0.0005,\"CurrentDayNumTrades\":1,\"CurrentDayPxChange\":-119.9,\"Rolling24HrVolume\":0.0005,\"Rolling24NumTrades\":1,\"Rolling24HrPxChange\":-92.2308,\"TimeStamp\":1614623773}"
 }
 ```
+Ao assinar o canal `SubscribeLevel1`, o primeiro retorno vem com os dados iniciais das moedas, os demais updates começam a chegar através do evento `Level1UpdateEvent`
 
 # Informações adicionais
 
